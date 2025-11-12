@@ -1,4 +1,9 @@
 #root {
   text-align: center;
 }
-
+button{
+  cursor:pointer;
+}
+a{
+  cursor:pointer;
+}
