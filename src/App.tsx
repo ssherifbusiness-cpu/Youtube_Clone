@@ -1,17 +1,18 @@
 import { useState } from 'react'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css'
-import React from 'react'
-
-import Headbar from './modules/headbar.tsx'
-import Sidebar from './modules/sidebar.tsx'
+import Home from './pages/home.tsx'
+import YouTubeStudio from './pages/youtubeStudio.tsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-        <Headbar />
-        <Sidebar />
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/youtubestudio' element={<YouTubeStudio />} />
+        </Routes>
+      </Router>
     </>
   )
 }
