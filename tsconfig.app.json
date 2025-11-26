@@ -6,6 +6,7 @@
       "@/pages/*":["pages/*"],
       "@/assets/*":["assets/*"],
       "@/lib/*":["lib/*"],
+      "@/public/*":["public/*"],
     },
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "ES2022",
